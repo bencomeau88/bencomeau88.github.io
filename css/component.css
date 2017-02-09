@@ -54,7 +54,6 @@ transform: translate3d(4px, 0, 0);
 .og-grid li > a img {
 	border: none;
 	outline: none;
-	display: block;
 	position: relative;
 }
 
@@ -214,6 +213,206 @@ transform: translate3d(4px, 0, 0);
 	0% { background: #ddd; }
 	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
 	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+.chatroomHover{
+	visibility:hidden;
+	z-index: 9999;
+    position: relative;
+    margin-top: -255px;
+    background-color: #404040;
+    height: 250px;
+    width: 250px;
+		color:white;
+		opacity: 0.8;
+}
+
+a:hover > .chatroomHover {
+		visibility:visible;
+}
+
+.chatroomHover > h2 {
+	padding-top:100px;
+}
+
+.counselingHover{
+	visibility:hidden;
+	z-index: 9999;
+    position: relative;
+    margin-top: -255px;
+    background-color: #404040;
+    height: 250px;
+    width: 250px;
+		color:white;
+		opacity: 0.8;
+}
+
+a:hover > .counselingHover {
+		visibility:visible;
+}
+
+.counselingHover > h2 {
+	padding-top:100px;
+}
+
+.shoppingAppHover{
+	visibility:hidden;
+	z-index: 9999;
+    position: relative;
+    margin-top: -255px;
+    background-color: #404040;
+    height: 250px;
+    width: 250px;
+		color:white;
+		opacity: 0.8;
+}
+
+a:hover > .shoppingAppHover {
+		visibility:visible;
+}
+
+.shoppingAppHover > h2 {
+	padding-top:100px;
+}
+
+.bartenderHover{
+	visibility:hidden;
+	z-index: 9999;
+    position: relative;
+    margin-top: -255px;
+    background-color: #404040;
+    height: 250px;
+    width: 250px;
+		color:white;
+		opacity: 0.8;
+}
+
+a:hover > .bartenderHover {
+		visibility:visible;
+}
+
+.bartenderHover > h2 {
+	padding-top:100px;
+}
+
+.hotColdHover{
+	visibility:hidden;
+	z-index: 9999;
+    position: relative;
+    margin-top: -255px;
+    background-color: #404040;
+    height: 250px;
+    width: 250px;
+		color:white;
+		opacity: 0.8;
+}
+
+a:hover > .hotColdHover {
+		visibility:visible;
+}
+
+.hotColdHover > h2 {
+	padding-top:100px;
+}
+
+.ticTacToeHover{
+	visibility:hidden;
+	z-index: 9999;
+    position: relative;
+    margin-top: -255px;
+    background-color: #404040;
+    height: 250px;
+    width: 250px;
+		color:white;
+		opacity: 0.8;
+}
+
+a:hover > .ticTacToeHover {
+		visibility:visible;
+}
+
+.ticTacToeHover > h2 {
+	padding-top:100px;
+}
+
+.pictionaryHover{
+	visibility:hidden;
+	z-index: 9999;
+    position: relative;
+    margin-top: -255px;
+    background-color: #404040;
+    height: 250px;
+    width: 250px;
+		color:white;
+		opacity: 0.8;
+}
+
+a:hover > .pictionaryHover {
+		visibility:visible;
+}
+
+.pictionaryHover > h2 {
+	padding-top:100px;
+}
+
+.karmaHover{
+	visibility:hidden;
+	z-index: 9999;
+    position: relative;
+    margin-top: -255px;
+    background-color: #404040;
+    height: 250px;
+    width: 250px;
+		color:white;
+		opacity: 0.8;
+}
+
+a:hover > .karmaHover {
+		visibility:visible;
+}
+
+.karmaHover > h2 {
+	padding-top:100px;
+}
+
+.socketsHover{
+	visibility:hidden;
+	z-index: 9999;
+    position: relative;
+    margin-top: -255px;
+    background-color: #404040;
+    height: 250px;
+    width: 250px;
+		color:white;
+		opacity: 0.8;
+}
+
+a:hover > .socketsHover {
+		visibility:visible;
+}
+
+.socketsHover > h2 {
+	padding-top:100px;
+}
+
+.spotifyHover{
+	visibility:hidden;
+	z-index: 9999;
+	position: relative;
+	margin-top: -250px;
+	background-color: #404040;
+	height: 250px;
+	width: 250px;
+	color:white;
+	opacity: 0.8;
+}
+
+a:hover > .spotifyHover {
+		visibility:visible;
+}
+
+.spotifyHover > h2 {
+	padding-top:100px;
 }
 
 @media screen and (max-width: 830px) {

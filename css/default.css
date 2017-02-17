@@ -45,9 +45,18 @@ a {
 }
 
 .container {
-	width: 100%;
+	background-image:url('./images/greyBackground.jpg');
 	position: relative;
+	display:none;
+width: 90%;
+border-radius: 64px;
+text-align: center;
+padding-left: 10%;
+padding-right: 10%;
+left:5%;
 }
+
+
 
 .container > header {
 	width: 90%;
@@ -74,6 +83,10 @@ a {
 	display: block;
 	font-size: 20px;
 	font-weight: 300;
+}
+
+.main {
+	opacity:1;
 }
 
 .main > p {

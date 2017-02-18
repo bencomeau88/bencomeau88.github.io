@@ -1,4 +1,4 @@
-/* General Demo Style */
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 
@@ -14,7 +14,6 @@ html { height: 100%; }
 	margin: 0;
 }
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -44,8 +43,22 @@ a {
 	text-decoration: none;
 }
 
+/* how to change the opacity of a background image but not the elements inside of it using a pseudoElement*/
+
+container:after {
+	content:url(../images/chalkboard.jpg);
+	background-image: url('../images/chalkboard.jpg');
+	background: transparent url(../images/greyBackground.jpg) 70% repeat-x;
+	background-size: auto;
+	opacity:0.8;
+	z-index: -1;
+}
+
 .container {
-	background-image:url('./images/greyBackground.jpg');
+	/*background: transparent url(../images/greyBackground.jpg) 300% repeat-x;*/
+	/*background-image: url('../images/chalkboard.jpg');
+	background-size: auto;
+	opacity:0.8;*/
 	position: relative;
 	display:none;
 width: 90%;
@@ -54,6 +67,7 @@ text-align: center;
 padding-left: 10%;
 padding-right: 10%;
 left:5%;
+z-index: 1;
 }
 
 

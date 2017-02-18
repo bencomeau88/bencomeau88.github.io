@@ -20,12 +20,14 @@ $('.projectsBttn').on('click', function(e){
   $('.container').show();
   $('.projectsBttn').hide();
   $('.projectsCloseBttn').show();
+  $('.arrowContainer').hide();
 });
 
 $('.projectsCloseBttn').on('click', function(){
   $('.container').hide();
   $('.projectsCloseBttn').hide();
   $('.projectsBttn').show();
+  $('.arrowContainer').show();
 })
 
 })

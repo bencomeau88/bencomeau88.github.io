@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
 body {
 	background-color:#e6e6e6;
-	background-image:url('../images/hodgepodge.png');
+	background-image:url('../images/wafflesBackground.jpg');
 	/*opacity:0.8;*/
 }
 
@@ -27,7 +28,7 @@ body {
 -moz-transition: -moz-transform 0.5s ease;
 transition: transform 0.5s ease;
 	margin-bottom:50px;
-	font-family: open sans;
+	font-family: 'Poiret One', cursive;
 	font-size:30px;
 	background-color:bisque;
 }
@@ -48,7 +49,9 @@ cursor:pointer;
 -moz-transition: -moz-transform 0.5s ease;
 transition: transform 0.5s ease;
 	margin-bottom:50px;
-	font-family: open sans;
+	font-family: 'Poiret One', cursive;
+	padding-bottom: 10px;
+	padding-top:10px;
 	font-size:30px;
 	background-color:bisque;
 
@@ -106,11 +109,18 @@ li.instagram {
 	transform: translate3d(0,0,0);
 }
 
+.arrowContainer {
+	height:95px;
+}
+
+.arrowTitle {
+	font-size:15px;
+}
 
 .arrow {
 	background-image: url('../images/downArrow.svg');
 	background-repeat: no-repeat;
-	height:300px;
+	height:150px;
 	background-position:center;
 }
 

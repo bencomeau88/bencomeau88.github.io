@@ -45,21 +45,19 @@ a {
 
 /* how to change the opacity of a background image but not the elements inside of it using a pseudoElement*/
 
-container:after {
+/*container:after {
 	content:url(../images/chalkboard.jpg);
 	background-image: url('../images/chalkboard.jpg');
 	background: transparent url(../images/greyBackground.jpg) 70% repeat-x;
 	background-size: auto;
 	opacity:0.8;
 	z-index: -1;
-}
+}*/
 
 .container {
-	/*background: transparent url(../images/greyBackground.jpg) 300% repeat-x;*/
-	/*background-image: url('../images/chalkboard.jpg');
-	background-size: auto;
-	opacity:0.8;*/
-	position: relative;
+	/*background: transparent url(../images/greyBackground.png) 300% repeat-x;*/
+	background-image: url('../images/greyBackground.png');
+	background-size: contain;
 	display:none;
 width: 90%;
 border-radius: 64px;
@@ -101,6 +99,7 @@ z-index: 1;
 
 .main {
 	opacity:1;
+
 }
 
 .main > p {

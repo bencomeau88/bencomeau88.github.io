@@ -11,6 +11,7 @@
 	<meta name="author" content="Codrops" />
 	<link rel="shortcut icon" href="../favicon.ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/default.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -19,8 +20,29 @@
 </head>
 
 <body>
-	<div class="opacity">
+<!-- sample modal button -->
+<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button> -->
 
+   <!-- Modal -->
+   <div class="modal fade" id="myModal" role="dialog">
+     <div class="modal-dialog modal-sm">
+       <div class="modal-content">
+         <div class="modal-header normFont">
+           <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+           <h4 class="modal-title">Hi, I'm Ben Comeau</h4>
+         </div>
+         <div class="modal-body normFont">
+           <p>I'm a creatively minded front end developer. I know and am comfortable using HTML, CSS, Javascript, and backend server work utilizing Node.js and have used socket.io. I have an insaitable thirst for knowledge and enjoy problem solving, but I've had trouble finding a career that challenges me enough intellectually...until I found coding. Let me put my tenacity and positive work ethic to work for you.</p>
+         </div>
+         <div class="modal-footer normFont">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+	<div class="opacity">
 		<div class="pictureContainer">
 			<img class='picture' src="./images/face.jpg">
 			<h1 class=""></h1>
@@ -28,20 +50,18 @@
 		<div class="social-icons">
 			<ul class="social">
 				<li class="aboutMe">
-					<a href="https://twitter.com" target="_blank">
-						<i class="fa fa-question fa-2x aboutMe"> </i>
-					</a>
+						<i class="fa fa-question fa-2x aboutMe" data-toggle="modal" data-target="#myModal"> </i>
 				</li>
-				<a href="https://facebook.com" target="_blank">
+				<a href="http://www.linkedin.com/in/benjamin-comeau-softwareDev" target="_blank">
 					<li class="fb">
-						<i class="fa fa-facebook fa-2x"></i>
+						<i class="fa fa-linkedin fa-2x"></i>
 				</a>
 				</li>
-				<li class="instagram">
+				<!-- <li class="instagram">
 					<a href="https://instagram.com" target="_blank">
 						<i class="fa fa-instagram fa-2x"></i>
 					</a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 
@@ -69,7 +89,8 @@
 
 
 	<div class="aboutBttnWrapper">
-		<button type="button" class="projectsBttn">My Projects</button>
+
+		<button type="button" class="projectsBttn" data-toggle="modal" data-target="projectsModal">My Projects</button>
 	</div>
 
 	<div class="container">
@@ -88,7 +109,8 @@
 		<!-- <a> href="https://github.com/you" </a>-->
 
 		<div class="main">
-			<ul id="og-grid" class="og-grid">
+			<!-- 2/24 removed id="og-grid"...still seems to work -->
+			<ul class="og-grid">
 				<li>
 					<a href="https://github.com/bencomeau88/SocketsAgainstHumanity" data-largesrc="./images/socketsScreenshot.png" data-title="Sockets Against Humanity" data-description="Card's Against Humanity game that uses Node.js to allow multiple players to play across a server">
 						<img class='screenshot' src="images/thumbs/socketsAgainstHumanity.png" width='250px' height='250px' alt="img01" />
@@ -106,10 +128,10 @@
 					</a>
 				</li>
 				<li>
-					<a href="https://github.com/bencomeau88/website" data-largesrc="images/momSiteScreenshot.png" data-title="Website" data-description="A website designed for a counsoler. Implemented utilizing a template which was then modified to the clients specifications">
+					<a href="https://github.com/bencomeau88/website" data-largesrc="images/momSiteScreenshot.png" data-title="Website" data-description="A website designed for a counselor. Implemented utilizing a template which was then modified to the clients specifications">
 						<img class='screenshot' src="images/thumbs/websiteThumb.svg" width="250px" height="250px" alt="img03" />
 						<div class="counselingHover">
-							<h2>Counsoling Site</h2>
+							<h2>Counseling Site</h2>
 						</div>
 					</a>
 				</li>
@@ -130,7 +152,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/hotColdScreenshot.png" data-title="Hot Cold Game" data-description="A game that randomly generates a number 1-100 then allows users to guess until they get the right number...are you Hot, or Cold?">
+					<a href="https://github.com/bencomeau88/hotCold" data-largesrc="images/hotColdScreenshot.png" data-title="Hot Cold Game" data-description="A game that randomly generates a number 1-100 then allows users to guess until they get the right number...are you Hot, or Cold?">
 						<img class='screenshot' src="images/thumbs/HotOrColdThumb.png" width='250px' height='250px' alt="img03" />
 						<div class="hotColdHover">
 							<h2>Hot.Cold Game</h2>
@@ -138,7 +160,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/ticTacToeScreenshot.png" data-title="TicTacToe!" data-description="A local TicTacToe game made using HTML, Javascript, and CSS.">
+					<a href="https://github.com/bencomeau88/TicTacToe" data-largesrc="images/ticTacToeScreenshot.png" data-title="TicTacToe!" data-description="A local TicTacToe game made using HTML, Javascript, and CSS.">
 						<img class='screenshot' src="images/thumbs/ticTacToeThumb.svg" width='250px' height='250px' alt="img01" />
 						<div class="ticTacToeHover">
 							<h2>TicTacToe Game</h2>
@@ -146,7 +168,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/pictionaryScreenshot.png" data-title="Pictionary" data-description="A Pictionary game made using HTML, Javascript, CSS, Node.js, and Socket.io. Can be played by multiple people on multiple computers.">
+					<a href="https://github.com/bencomeau88/Pictionary" data-largesrc="images/pictionaryScreenshot.png" data-title="Pictionary" data-description="A Pictionary game made using HTML, Javascript, CSS, Node.js, and Socket.io. Can be played by multiple people on multiple computers.">
 						<img class='screenshot' src="images/thumbs/pictionaryThumb.svg" width='250px' height='250px' alt="img02" />
 						<div class="pictionaryHover">
 							<h2>Pictionary</h2>
@@ -154,7 +176,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/karmaSiteScreenshot.png" data-title="Karma Website" data-description="A basic website clone created using HTML, and CSS.">
+					<a href="https://github.com/bencomeau88/real-landing-page" data-largesrc="images/karmaSiteScreenshot.png" data-title="Karma Website" data-description="A basic website clone created using HTML, and CSS.">
 						<img class='screenshot' src="images/thumbs/karmaThumb.svg" width='250px' height='250px' alt="img03" />
 						<div class="karmaHover">
 							<h2>Karma Copy Site</h2>
@@ -162,7 +184,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/spotifyScreenshot.png" data-title="Spotify API" data-description="A basic website that uses HTML, CSS, and Javascript to manipulate and present data recieved from Spotify's &copy API.">
+					<a href="https://github.com/bencomeau88/Spotify_v2" data-largesrc="images/spotifyScreenshot.png" data-title="Spotify API" data-description="A basic website that uses HTML, CSS, and Javascript to manipulate and present data recieved from Spotify's &copy API.">
 						<img class='screenshot' src="images/thumbs/spotify.png" width="250px" height='250px' alt="img01" />
 						<div class="spotifyHover">
 							<h2>Spotify</h2>
@@ -179,6 +201,7 @@
 
 	<!-- /container -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/grid.js"></script>
 	<script src='js/app.js'></script>
 	<script>

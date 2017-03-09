@@ -8,8 +8,8 @@ body {
 }
 
 .modalPicture {
-	width:150px;
-	height:150px;
+	width:200px;
+	height:300px;
 }
 
 .topBanner {
@@ -630,7 +630,7 @@ a:hover > .spotifyHover {
 
 a:hover,
 li:hover {
-  background-color: #00ff80;
+  /*background-color: #00ff80;*/
   border-radius: 0.8em;
   cursor: pointer;
 }
